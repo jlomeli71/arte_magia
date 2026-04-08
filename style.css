@@ -719,13 +719,18 @@ img { max-width: 100%; display: block; }
 /* Hero — medallón flotante */
 .hero-medallion {
   position: relative;
-  width: clamp(260px, 50vw, 480px);
-  margin: 0 auto 1rem;
+  width: clamp(180px, 30vw, 280px);
+  aspect-ratio: 1;
+  margin: 0 auto 2rem;
   animation: medallion-float 8s ease-in-out infinite;
 }
 
 .medallion-img {
   width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(201, 168, 76, 0.5);
   animation: medallion-rotate 60s linear infinite;
   filter: drop-shadow(0 0 30px rgba(124, 92, 191, 0.6))
           drop-shadow(0 0 15px rgba(201, 168, 76, 0.4));
