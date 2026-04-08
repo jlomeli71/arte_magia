@@ -695,3 +695,79 @@ img { max-width: 100%; display: block; }
   left: 1rem;
   right: 1rem;
 }
+
+/* ========================
+   LOGO IMAGEN
+   ======================== */
+
+/* Navbar */
+.nav-logo-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-gold);
+  box-shadow: 0 0 10px rgba(201, 168, 76, 0.4);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.nav-logo:hover .nav-logo-img {
+  box-shadow: 0 0 22px rgba(201, 168, 76, 0.7);
+  transform: rotate(15deg);
+}
+
+/* Hero — medallón flotante */
+.hero-medallion {
+  position: relative;
+  width: clamp(180px, 30vw, 280px);
+  margin: 0 auto 2rem;
+  animation: medallion-float 8s ease-in-out infinite;
+}
+
+.medallion-img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid rgba(201, 168, 76, 0.5);
+  animation: medallion-rotate 60s linear infinite;
+  filter: drop-shadow(0 0 30px rgba(124, 92, 191, 0.6))
+          drop-shadow(0 0 15px rgba(201, 168, 76, 0.4));
+}
+
+.medallion-glow {
+  position: absolute;
+  inset: -20%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(124, 92, 191, 0.2) 0%, transparent 70%);
+  animation: pulse 4s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes medallion-float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-15px); }
+}
+
+@keyframes medallion-rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50%       { opacity: 1;   transform: scale(1.08); }
+}
+
+/* Footer */
+.footer-logo-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  opacity: 0.8;
+  transition: opacity var(--transition), box-shadow var(--transition);
+}
+
+.footer-logo-img:hover {
+  opacity: 1;
+  box-shadow: 0 0 20px rgba(201, 168, 76, 0.4);
+}
