@@ -37,7 +37,7 @@ Las letras hebreas **Aleph (א)** y **Mem (מ)** son el corazón del logo:
 
 | # | Nombre | Estado | Repositorio |
 |---|--------|--------|-------------|
-| 1 | La Magia del Ser *(Ho'oponopono)* | ✅ Disponible | https://github.com/jlomeli71/la_magia_del_ser/ |
+| 1 | La Magia del Ser *(Ho'oponopono)* | ✅ Disponible | https://jlomeli71.github.io/la_magia_del_ser/ |
 | 2 | Atendiendo a mi Niño Interior | 🔄 En desarrollo | — |
 | 3 | Tomando a mi Clan *(Constelaciones)* | 🔄 En desarrollo | — |
 | 4 | Recordando mi Origen *(UCDM)* | 🔄 En desarrollo | — |
