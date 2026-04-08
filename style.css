@@ -705,6 +705,7 @@ img { max-width: 100%; display: block; }
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  object-fit: cover;
   border: 1.5px solid var(--color-gold);
   box-shadow: 0 0 10px rgba(201, 168, 76, 0.4);
   transition: box-shadow var(--transition), transform var(--transition);
@@ -718,15 +719,13 @@ img { max-width: 100%; display: block; }
 /* Hero — medallón flotante */
 .hero-medallion {
   position: relative;
-  width: clamp(180px, 30vw, 280px);
-  margin: 0 auto 2rem;
+  width: clamp(260px, 50vw, 480px);
+  margin: 0 auto 1rem;
   animation: medallion-float 8s ease-in-out infinite;
 }
 
 .medallion-img {
   width: 100%;
-  border-radius: 50%;
-  border: 2px solid rgba(201, 168, 76, 0.5);
   animation: medallion-rotate 60s linear infinite;
   filter: drop-shadow(0 0 30px rgba(124, 92, 191, 0.6))
           drop-shadow(0 0 15px rgba(201, 168, 76, 0.4));
@@ -759,9 +758,10 @@ img { max-width: 100%; display: block; }
 
 /* Footer */
 .footer-logo-img {
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
+  object-fit: cover;
   border: 1px solid rgba(201, 168, 76, 0.35);
   opacity: 0.8;
   transition: opacity var(--transition), box-shadow var(--transition);
