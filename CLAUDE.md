@@ -65,6 +65,8 @@ arte_magia/
 ├── index.html      → Página principal (menú, hero, secciones)
 ├── style.css       → Estilos completos (paleta oscura violeta-dorada)
 ├── main.js         → Interactividad (estrellas, menú móvil, scroll, formulario)
+├── images/         → Logo e imágenes (logo.png)
+├── README.md       → Presentación del proyecto para GitHub
 ├── .nojekyll       → Para compatibilidad con GitHub Pages
 └── CLAUDE.md       → Este archivo (contexto y estado del proyecto)
 ```
@@ -86,6 +88,13 @@ arte_magia/
 - [x] Animaciones de entrada y menú hamburguesa para móvil
 - [x] Archivo `.nojekyll` para GitHub Pages
 - [x] Publicado en GitHub y configurado para GitHub Pages
+- [x] Logo generado con IA integrado en navbar, hero y footer (images/logo.png)
+- [x] Título cambiado a "Donde la Magia y el Arte se Encuentran"
+- [x] Sección Música renombrada a "Música para el Alma"
+- [x] Nuevo álbum "También para Niños" agregado
+- [x] Libro 1 renombrado a "El Viaje del Alma"
+- [x] Libro 2 renombrado a "Conversando con las Estrellas"
+- [x] README.md creado con presentación completa del proyecto
 
 ---
 
@@ -147,3 +156,17 @@ Comienza con **GitHub Pages** — es perfecto para esta etapa. Cuando tengas má
 - Lenguaje sencillo, práctico, con humor moderado
 - Diseño: minimalista, elegante, colores neutros-oscuros con acentos dorados
 - Sin frameworks: solo HTML, CSS y JavaScript Vanilla
+
+## 10. Tareas adicionales
+
+- [x] Cambia "Portal Holisto", a algo que tenga que ver con el logo y mas interesante, como "Donde la Magia y Arte se encuentran"
+
+- [x] En la sección de música, cambia el texto de "Música Sanadora" a "Música para el Alma"
+
+- [x] En la sección de música, agrega un album que estoy planeando para niños, se llama "Tambien para niños"
+
+- [x] En la sección de libros, cambia "El Tarot a traves de un cuento" a "El viaje del alma", y deja como descripcion algo como "Un viaje por los arquetipos del tarot a traves de un cuento"
+
+- [x] En la sección de libros, cambia "La Astrología a traves de un Cuento" a "Conversando  con las estrellas", y deja como descripcion algo como "Un viaje por la astrologia a traves de un cuento"
+
+- [x] Agrega un archivo README.md con la informacion de este proyecto, y que sea un archivo que se pueda leer en la web, como una pagina de inicio.
