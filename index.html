@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Arte Magia — Proyectos holísticos de música sanadora, libros esotéricos y videos sobre prácticas espirituales." />
+  <title>Arte Magia — Portal Holístico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== BARRA DE NAVEGACIÓN ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo + Nombre -->
+      <a href="#inicio" class="nav-logo" id="logo-link">
+        <div class="logo-letters">
+          <span class="heb-letter aleph">א</span>
+          <span class="logo-dot">✦</span>
+          <span class="heb-letter mem">מ</span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">Arte Magia</span>
+          <span class="logo-sub">Portal Holístico</span>
+        </div>
+      </a>
+
+      <!-- Menú hamburguesa (móvil) -->
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Menú principal -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="#inicio" class="nav-link" id="nav-inicio">Inicio</a></li>
+          <li><a href="#musica" class="nav-link" id="nav-musica">Música</a></li>
+          <li><a href="#libros" class="nav-link" id="nav-libros">Libros</a></li>
+          <li><a href="#videos" class="nav-link" id="nav-videos">Videos</a></li>
+          <li><a href="#contacto" class="nav-link" id="nav-contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO / INICIO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="stars" id="stars"></div>
+    <div class="hero-content">
+      <div class="hero-logo-big">
+        <span class="heb-big aleph-big">א</span>
+        <span class="heb-big mem-big">מ</span>
+      </div>
+      <h1 class="hero-title">Arte <span class="gold">Magia</span></h1>
+      <p class="hero-subtitle">Un espacio donde el arte y lo sagrado se encuentran para sanar, despertar y transformar.</p>
+      <p class="hero-desc">
+        Las letras hebreas <strong>Aleph (א)</strong> y <strong>Mem (מ)</strong> son el corazón de este proyecto.<br/>
+        <em>Aleph</em> representa el principio divino, el início de todo — el <strong>Arte</strong> que da forma.<br/>
+        <em>Mem</em> representa las aguas primordiales, la transformación — la <strong>Magia</strong> que fluye.
+      </p>
+      <a href="#musica" class="btn-primary" id="btn-explorar">Explorar Proyectos ✦</a>
+    </div>
+    <div class="scroll-hint">↓</div>
+  </section>
+
+  <!-- ===== MÚSICA ===== -->
+  <section class="section" id="musica">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-icon">🎵</span>
+        <h2 class="section-title">Música Sanadora</h2>
+        <p class="section-desc">Álbumes creados con intención, frecuencias y amor. Cada nota es un paso hacia adentro.</p>
+      </div>
+
+      <div class="cards-grid" id="musica-grid">
+
+        <article class="card card-active" id="album-1">
+          <div class="card-badge">Disponible</div>
+          <div class="card-icon">🌺</div>
+          <h3 class="card-title">La Magia del Ser</h3>
+          <p class="card-desc">Un álbum inspirado en el Ho'oponopono, la antigua práctica hawaiana de perdón y reconciliación. Cuatro palabras, infinita sanación: <em>"Lo siento, perdóname, gracias, te amo."</em></p>
+          <a href="https://github.com/jlomeli71/la_magia_del_ser/" target="_blank" rel="noopener" class="card-link" id="link-album-1">Escuchar Ahora →</a>
+        </article>
+
+        <article class="card card-coming" id="album-2">
+          <div class="card-badge coming">Próximamente</div>
+          <div class="card-icon">🧒</div>
+          <h3 class="card-title">Atendiendo a mi Niño Interior</h3>
+          <p class="card-desc">Música para sanar las heridas de la infancia. Porque ese niño que fuimos sigue ahí, esperando un abrazo.</p>
+          <span class="card-link disabled">En desarrollo...</span>
+        </article>
+
+        <article class="card card-coming" id="album-3">
+          <div class="card-badge coming">Próximamente</div>
+          <div class="card-icon">🌳</div>
+          <h3 class="card-title">Tomando a mi Clan</h3>
+          <p class="card-desc">Basado en las constelaciones familiares y frases sanadoras. Porque somos parte de algo mucho más grande que nosotros mismos.</p>
+          <span class="card-link disabled">En desarrollo...</span>
+        </article>
+
+        <article class="card card-coming" id="album-4">
+          <div class="card-badge coming">Próximamente</div>
+          <div class="card-icon">☀️</div>
+          <h3 class="card-title">Recordando mi Origen</h3>
+          <p class="card-desc">Inspirado en los ejercicios de "Un Curso de Milagros". Un recordatorio suave de que somos luz, y siempre lo hemos sido.</p>
+          <span class="card-link disabled">En desarrollo...</span>
+        </article>
+
+        <article class="card card-coming" id="album-5">
+          <div class="card-badge coming">Próximamente</div>
+          <div class="card-icon">🔮</div>
+          <h3 class="card-title">Cambiando mi Realidad</h3>
+          <p class="card-desc">Música para el cambio de creencias. Porque lo que creemos sobre nosotros mismos es el primer paso para transformar todo lo demás.</p>
+          <span class="card-link disabled">En desarrollo...</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIBROS ===== -->
+  <section class="section section-alt" id="libros">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-icon">📖</span>
+        <h2 class="section-title">Libros & eBooks</h2>
+        <p class="section-desc">El conocimiento ancestral contado como historia. Porque aprendemos mejor cuando nos emocionamos.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <article class="card card-coming" id="libro-tarot">
+          <div class="card-badge coming">Próximamente</div>
+          <div class="card-icon">🃏</div>
+          <h3 class="card-title">El Tarot a través de un Cuento</h3>
+          <p class="card-desc">Aprende los 78 arcanos del Tarot siguiendo una historia que te atrapará desde la primera página. Sin términos raros, sin complicaciones.</p>
+          <span class="card-link disabled">En desarrollo...</span>
+        </article>
+
+        <article class="card card-coming" id="libro-astrologia">
+          <div class="card-badge coming">Próximamente</div>
+          <div class="card-icon">⭐</div>
+          <h3 class="card-title">La Astrología a través de un Cuento</h3>
+          <p class="card-desc">Los planetas, signos y casas explicados a través de personajes entrañables. Tu carta natal nunca fue tan divertida.</p>
+          <span class="card-link disabled">En desarrollo...</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEOS ===== -->
+  <section class="section" id="videos">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-icon">▶️</span>
+        <h2 class="section-title">Videos</h2>
+        <p class="section-desc">Prácticas holísticas explicadas de forma sencilla, práctica y con todo el humor que merecen.</p>
+      </div>
+
+      <div class="video-placeholder" id="video-pronto">
+        <div class="video-inner">
+          <span class="video-icon">🎬</span>
+          <h3>Canal de YouTube — ¡Próximamente!</h3>
+          <p>Se vienen videos sobre Ho'oponopono, Kabalá, Constelaciones Familiares y mucho más... ¡contados como cuentos para que no te duermas! 😄</p>
+          <p class="video-sub">Temas que cubriremos:</p>
+          <ul class="video-list">
+            <li>✦ Ho'oponopono: el arte del perdón en 4 palabras</li>
+            <li>✦ Kabalá: el árbol de la vida desde tu sala</li>
+            <li>✦ Constelaciones Familiares: sanar sin pelearnos con nadie</li>
+            <li>✦ Numerología: los números que te persiguen (y por qué)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="section section-alt" id="contacto">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-icon">✉️</span>
+        <h2 class="section-title">Contacto</h2>
+        <p class="section-desc">¿Tienes una pregunta, una idea, o simplemente quieres saludar? Escríbenos. El universo conspira para que estemos conectados.</p>
+      </div>
+
+      <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="nombre">Tu Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llaman en este plano?" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Tu Correo</label>
+          <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Tu Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué te trae por aquí..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" id="btn-enviar">Enviar Mensaje ✦</button>
+        <p class="form-note" id="form-msg" style="display:none;"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <span class="heb-letter aleph">א</span>
+      <span class="logo-dot">✦</span>
+      <span class="heb-letter mem">מ</span>
+    </div>
+    <p class="footer-name">Arte Magia</p>
+    <p class="footer-quote">"El arte es la magia que da forma al espíritu."</p>
+    <p class="footer-year">© <span id="year"></span> Arte Magia — Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
