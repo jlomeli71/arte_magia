@@ -180,7 +180,7 @@ img { max-width: 100%; display: block; }
    ======================== */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -193,9 +193,9 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(124, 92, 191, 0.3) 0%, transparent 70%),
-    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(201, 168, 76, 0.15) 0%, transparent 60%),
-    radial-gradient(ellipse 40% 30% at 20% 60%, rgba(124, 92, 191, 0.1) 0%, transparent 60%);
+    radial-gradient(ellipse 70% 55% at 42% 5%, rgba(124, 92, 191, 0.22) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 35% at 85% 78%, rgba(201, 168, 76, 0.1) 0%, transparent 60%),
+    radial-gradient(ellipse 35% 28% at 12% 58%, rgba(124, 92, 191, 0.07) 0%, transparent 60%);
   z-index: 0;
 }
 
@@ -407,7 +407,7 @@ img { max-width: 100%; display: block; }
   transform: translateY(-6px);
   background: var(--color-surface-hover);
   border-color: rgba(201, 168, 76, 0.35);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), 0 0 30px rgba(201, 168, 76, 0.08);
+  box-shadow: 0 16px 48px rgba(8, 6, 20, 0.7), 0 0 30px rgba(124, 92, 191, 0.12);
 }
 
 .card-active {
@@ -685,6 +685,70 @@ img { max-width: 100%; display: block; }
 .cards-grid .card:nth-child(3) { transition-delay: 0.19s; }
 .cards-grid .card:nth-child(4) { transition-delay: 0.26s; }
 .cards-grid .card:nth-child(5) { transition-delay: 0.33s; }
+
+/* ========================
+   REDESIGN-SKILL UPGRADES
+   ======================== */
+
+/* Noise overlay global — rompe la planitud digital */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  opacity: 0.025;
+  pointer-events: none;
+  z-index: 9998;
+}
+
+/* Focus rings accesibles */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* text-wrap: balance en títulos — evita palabras huérfanas */
+h1, h2, h3,
+.hero-title,
+.section-title,
+.card-title,
+.hero-subtitle {
+  text-wrap: balance;
+}
+
+/* Feedback en :active — simula clic físico */
+.btn-primary:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 2px 8px rgba(201, 168, 76, 0.3);
+}
+
+/* Footer legal */
+.footer-legal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-link {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+}
+
+.footer-link:hover {
+  color: var(--color-gold);
+}
+
+.footer-sep {
+  color: var(--color-text-muted);
+  opacity: 0.4;
+  font-size: 0.78rem;
+}
 
 /* Enlace activo en el navbar */
 .nav-link.active {

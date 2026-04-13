@@ -71,7 +71,8 @@ document.querySelectorAll('.card, .section-header, .video-placeholder, .contact-
 });
 
 // ── Formulario de contacto ──
-function handleSubmit(e) {
+const contactForm = document.getElementById('contact-form');
+contactForm?.addEventListener('submit', function(e) {
   e.preventDefault();
   const btn = document.getElementById('btn-enviar');
   const msg = document.getElementById('form-msg');
@@ -79,9 +80,9 @@ function handleSubmit(e) {
   btn.textContent = 'Enviando... ✨';
   btn.disabled = true;
 
-  // Simulación de envío (aquí irá la lógica real en el futuro)
+  // Simulación de envío (aquí irá la lógica real con Formspree o EmailJS)
   setTimeout(() => {
-    msg.textContent = '¡Mensaje recibido! El universo ya está conspirando para responderte. 🌟';
+    msg.textContent = 'Mensaje recibido. El universo ya está conspirando para responderte.';
     msg.style.display = 'block';
     btn.textContent = 'Enviado ✦';
     e.target.reset();
@@ -92,7 +93,7 @@ function handleSubmit(e) {
       msg.style.display = 'none';
     }, 5000);
   }, 1200);
-}
+});
 
 // ── Enlace activo en navbar según sección visible ──
 const secciones = document.querySelectorAll('section[id]');
